@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import RxFlow
 
-enum DemoStep {
+enum DemoStep : Step { 
     case loginIsRequired
     case homeIsRequired
     case signUpIsRequired

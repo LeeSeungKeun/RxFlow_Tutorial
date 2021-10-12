@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51B03F56E3E0AF67147212C4 /* Pods_RxFlowTutorial_RxFlowTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD4A017EE25651021EB3DA /* Pods_RxFlowTutorial_RxFlowTutorialUITests.framework */; };
+		669A00322715CBBF0065D963 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A00312715CBBF0065D963 /* AppStepper.swift */; };
 		66D346342715BEC800A10DA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346332715BEC800A10DA0 /* AppDelegate.swift */; };
 		66D346362715BEC800A10DA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346352715BEC800A10DA0 /* SceneDelegate.swift */; };
 		66D346382715BEC800A10DA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346372715BEC800A10DA0 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		3009BDFB5C063B9E27BA5A0A /* Pods-RxFlowTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlowTutorial.release.xcconfig"; path = "Target Support Files/Pods-RxFlowTutorial/Pods-RxFlowTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		37CA1DED379ED3935CE10F47 /* Pods-RxFlowTutorial-RxFlowTutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlowTutorial-RxFlowTutorialUITests.release.xcconfig"; path = "Target Support Files/Pods-RxFlowTutorial-RxFlowTutorialUITests/Pods-RxFlowTutorial-RxFlowTutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5FFC74C3C47CAF164046A75A /* Pods-RxFlowTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlowTutorial.debug.xcconfig"; path = "Target Support Files/Pods-RxFlowTutorial/Pods-RxFlowTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		669A00312715CBBF0065D963 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
 		66D346302715BEC800A10DA0 /* RxFlowTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D346332715BEC800A10DA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66D346352715BEC800A10DA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				66D346922715C8D600A10DA0 /* LoginFlow.swift */,
 				66D346972715C8E100A10DA0 /* HomeFlow.swift */,
 				66D3469C2715C8EC00A10DA0 /* SignUpFlow.swift */,
+				669A00312715CBBF0065D963 /* AppStepper.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				66D3463E2715BEC800A10DA0 /* RxFlowTutorial.xcdatamodeld in Sources */,
 				66D346342715BEC800A10DA0 /* AppDelegate.swift in Sources */,
 				66D3466C2715BF4400A10DA0 /* AppFlow.swift in Sources */,
+				669A00322715CBBF0065D963 /* AppStepper.swift in Sources */,
 				66D346362715BEC800A10DA0 /* SceneDelegate.swift in Sources */,
 				66D346A42715C9BC00A10DA0 /* LoginViewController.swift in Sources */,
 				66D346AC2715CA1F00A10DA0 /* HomeViewController.swift in Sources */,

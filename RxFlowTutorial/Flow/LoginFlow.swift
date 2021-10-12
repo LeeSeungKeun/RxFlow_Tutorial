@@ -8,7 +8,7 @@
 import Foundation
 import RxFlow
 
-class LoginFlow {
+class LoginFlow : Flow {
     var root: Presentable {
         return self.rootViewController
     }
@@ -27,12 +27,14 @@ class LoginFlow {
             return self.navigateToLogin()
         case .homeIsRequired:
             return .end(forwardToParentFlowWithStep: DemoStep.homeIsRequired)
+        case .signUpIsRequired:
+            return .none
         }
     }
 
     private func navigateToLogin() -> FlowContributors {
-        let viewController = LoginViewController()
-        self.rootViewController.setViewControllers([viewController], animated: false)
-        return .one(flowContributor: .contribute(withNext: viewController))
+        let vc = LoginViewController()
+        self.rootViewController.setViewControllers([vc], animated: false)
+        return .one(flowContributor: .contribute(withNext: vc))
     }
 }
