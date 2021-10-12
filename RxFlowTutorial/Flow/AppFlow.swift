@@ -29,6 +29,8 @@ class AppFlow: Flow {
             return self.navigateToLogin()
         case .loginIsRequired:
             return self.navigateToHome()
+        case .signUpIsRequired:
+            return .none
         }
     }
 
@@ -46,5 +48,13 @@ class AppFlow: Flow {
             self.window.rootViewController = root
         }
         return .one(flowContributor: .contribute(withNextPresentable: homeFlow, withNextStepper: OneStepper(withSingleStep: DemoStep.homeIsRequired)))
+    }
+
+    private func navigateToSingUp() -> FlowCoordinator {
+        let signUpFlow = SignUpFlow()
+        Flows.use(signUpFlow, when: .created) { (root) in
+            self.window.rootViewController = root
+        }
+        return .one(flowContributor: .contribute(withNextPresentable: signUpFlow, withNextStepper: OneStepper(withSingleStep: DemoStep.homeIsRequired)))
     }
 }

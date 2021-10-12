@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,13 @@
 		66D3464E2715BED100A10DA0 /* RxFlowTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D3464D2715BED100A10DA0 /* RxFlowTutorialTests.swift */; };
 		66D346592715BED100A10DA0 /* RxFlowTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346582715BED100A10DA0 /* RxFlowTutorialUITests.swift */; };
 		66D3466C2715BF4400A10DA0 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D3466B2715BF4400A10DA0 /* AppFlow.swift */; };
+		66D346852715C47A00A10DA0 /* DemoStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346842715C47A00A10DA0 /* DemoStep.swift */; };
+		66D3468B2715C56300A10DA0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D3468A2715C56300A10DA0 /* UserService.swift */; };
+		66D346932715C8D600A10DA0 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346922715C8D600A10DA0 /* LoginFlow.swift */; };
+		66D346982715C8E100A10DA0 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346972715C8E100A10DA0 /* HomeFlow.swift */; };
+		66D3469D2715C8EC00A10DA0 /* SignUpFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D3469C2715C8EC00A10DA0 /* SignUpFlow.swift */; };
+		66D346A42715C9BC00A10DA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346A32715C9BC00A10DA0 /* LoginViewController.swift */; };
+		66D346AC2715CA1F00A10DA0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D346AB2715CA1F00A10DA0 /* HomeViewController.swift */; };
 		6F753F20DA9BA9AD7DECD04C /* Pods_RxFlowTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A82F7751013AF7EE54EAC8 /* Pods_RxFlowTutorialTests.framework */; };
 		DCB09E9F914DAF12E1F154DC /* Pods_RxFlowTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767676B5781E64F2125DFBC0 /* Pods_RxFlowTutorial.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +68,13 @@
 		66D346582715BED100A10DA0 /* RxFlowTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFlowTutorialUITests.swift; sourceTree = "<group>"; };
 		66D3465A2715BED100A10DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D3466B2715BF4400A10DA0 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		66D346842715C47A00A10DA0 /* DemoStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStep.swift; sourceTree = "<group>"; };
+		66D3468A2715C56300A10DA0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		66D346922715C8D600A10DA0 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
+		66D346972715C8E100A10DA0 /* HomeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
+		66D3469C2715C8EC00A10DA0 /* SignUpFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlow.swift; sourceTree = "<group>"; };
+		66D346A32715C9BC00A10DA0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		66D346AB2715CA1F00A10DA0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6AF84AFD4589F73C762137E1 /* Pods-RxFlowTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlowTutorialTests.release.xcconfig"; path = "Target Support Files/Pods-RxFlowTutorialTests/Pods-RxFlowTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		767676B5781E64F2125DFBC0 /* Pods_RxFlowTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFlowTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCD4A017EE25651021EB3DA /* Pods_RxFlowTutorial_RxFlowTutorialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFlowTutorial_RxFlowTutorialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +134,9 @@
 		66D346322715BEC800A10DA0 /* RxFlowTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				66D346A12715C97100A10DA0 /* ViewController */,
+				66D346892715C4F400A10DA0 /* Service */,
+				66D346802715C27600A10DA0 /* Step */,
 				66D3466A2715BF1300A10DA0 /* Flow */,
 				66D346692715BF0B00A10DA0 /* Resource */,
 				66D346332715BEC800A10DA0 /* AppDelegate.swift */,
@@ -163,8 +180,36 @@
 			isa = PBXGroup;
 			children = (
 				66D3466B2715BF4400A10DA0 /* AppFlow.swift */,
+				66D346922715C8D600A10DA0 /* LoginFlow.swift */,
+				66D346972715C8E100A10DA0 /* HomeFlow.swift */,
+				66D3469C2715C8EC00A10DA0 /* SignUpFlow.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		66D346802715C27600A10DA0 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				66D346842715C47A00A10DA0 /* DemoStep.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		66D346892715C4F400A10DA0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				66D3468A2715C56300A10DA0 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		66D346A12715C97100A10DA0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				66D346A32715C9BC00A10DA0 /* LoginViewController.swift */,
+				66D346AB2715CA1F00A10DA0 /* HomeViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		897DDFCB026316A88167DD49 /* Pods */ = {
@@ -177,7 +222,6 @@
 				1258200EEA97AF9439A6BF0B /* Pods-RxFlowTutorialTests.debug.xcconfig */,
 				6AF84AFD4589F73C762137E1 /* Pods-RxFlowTutorialTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -429,11 +473,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D3468B2715C56300A10DA0 /* UserService.swift in Sources */,
+				66D346852715C47A00A10DA0 /* DemoStep.swift in Sources */,
 				66D346382715BEC800A10DA0 /* ViewController.swift in Sources */,
+				66D346932715C8D600A10DA0 /* LoginFlow.swift in Sources */,
+				66D346982715C8E100A10DA0 /* HomeFlow.swift in Sources */,
+				66D3469D2715C8EC00A10DA0 /* SignUpFlow.swift in Sources */,
 				66D3463E2715BEC800A10DA0 /* RxFlowTutorial.xcdatamodeld in Sources */,
 				66D346342715BEC800A10DA0 /* AppDelegate.swift in Sources */,
 				66D3466C2715BF4400A10DA0 /* AppFlow.swift in Sources */,
 				66D346362715BEC800A10DA0 /* SceneDelegate.swift in Sources */,
+				66D346A42715C9BC00A10DA0 /* LoginViewController.swift in Sources */,
+				66D346AC2715CA1F00A10DA0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
